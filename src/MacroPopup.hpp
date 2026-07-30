@@ -5,7 +5,7 @@
 
 using namespace geode::prelude;
 
-class MacroPopup : public geode::Popup<> {
+class MacroPopup : public geode::Popup<std::string const&> {
 protected:
     // Panneaux
     CCScale9Sprite* m_sidebar = nullptr;
